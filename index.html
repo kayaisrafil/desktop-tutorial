@@ -1,0 +1,2156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEWAL | Turkish Roots. Global Reach.</title>
+
+    <meta
+        name="description"
+        content="Newal is a Turkish home appliance brand with a strong international presence and a global supply network."
+    >
+
+    <style>
+        :root {
+            --red: #C10E12;
+            --black: #101010;
+            --dark: #171717;
+            --white: #ffffff;
+            --light: #f5f5f3;
+            --gray: #777;
+            --border: #deded9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--black);
+            background: var(--white);
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 78px;
+            z-index: 1000;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 0 5vw;
+
+            background: rgba(255,255,255,0.94);
+            backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid rgba(0,0,0,0.07);
+        }
+
+        .logo img {
+            display: block;
+            width: 105px;
+            height: auto;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        nav a {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+        }
+
+        nav a:hover {
+            color: var(--red);
+        }
+
+        .nav-button {
+            background: var(--red);
+            color: white;
+            padding: 13px 20px;
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            height: 100vh;
+            min-height: 700px;
+            position: relative;
+            overflow: hidden;
+
+            display: flex;
+            align-items: stretch;
+
+            background: #111;
+            color: white;
+        }
+
+        .hero-video-panel {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+
+            width: min(46vw, 640px);
+
+            overflow: hidden;
+        }
+
+        .hero-video-panel video {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .hero-video-panel::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+
+            background: linear-gradient(
+                90deg,
+                rgba(17,17,17,0.9),
+                rgba(17,17,17,0) 18%
+            );
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            width: 100%;
+            max-width: 1000px;
+
+            padding:
+                0
+                7vw
+                9vh;
+        }
+
+        .eyebrow {
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 4px;
+            margin-bottom: 22px;
+        }
+
+        .hero h1 {
+            font-size: clamp(55px, 8vw, 115px);
+            line-height: 0.9;
+
+            letter-spacing: -6px;
+
+            margin-bottom: 30px;
+
+            font-weight: 900;
+        }
+
+        .hero h1 span {
+            color: var(--red);
+        }
+
+        .hero-description {
+            max-width: 650px;
+
+            font-size: 18px;
+
+            color: rgba(255,255,255,0.82);
+
+            margin-bottom: 35px;
+        }
+
+        .button {
+            display: inline-flex;
+
+            align-items: center;
+            justify-content: center;
+
+            padding: 16px 24px;
+
+            font-size: 11px;
+            font-weight: 800;
+
+            letter-spacing: 1.4px;
+
+            margin-right: 10px;
+        }
+
+        .button-red {
+            background: var(--red);
+            color: white;
+        }
+
+        .button-white {
+            background: white;
+            color: var(--black);
+        }
+
+        /* =========================
+           GENERAL
+        ========================= */
+
+        section {
+            padding: 120px 7vw;
+        }
+
+        .kicker {
+            color: var(--red);
+
+            font-size: 11px;
+            font-weight: 800;
+
+            letter-spacing: 3px;
+
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: clamp(42px, 5.5vw, 78px);
+
+            line-height: 0.98;
+
+            letter-spacing: -4px;
+
+            margin-bottom: 30px;
+        }
+
+        .lead {
+            font-size: 20px;
+            color: #505050;
+        }
+
+        /* =========================
+           INTRO
+        ========================= */
+
+        .intro {
+            display: grid;
+
+            grid-template-columns:
+                1.1fr
+                0.9fr;
+
+            gap: 9vw;
+
+            align-items: center;
+        }
+
+        /* =========================
+           GLOBAL NETWORK
+        ========================= */
+
+        .network {
+            background: var(--black);
+            color: white;
+        }
+
+        .network h2 {
+            max-width: 900px;
+        }
+
+        .network-description {
+            color: #999;
+            max-width: 700px;
+            font-size: 18px;
+        }
+
+        .network-map {
+            position: relative;
+
+            margin-top: 70px;
+
+            height: 460px;
+
+            border: 1px solid #292929;
+
+            background:
+                radial-gradient(
+                    circle at center,
+                    rgba(227,6,19,0.14),
+                    transparent 45%
+                ),
+                #151515;
+
+            overflow: hidden;
+        }
+
+        .map-grid {
+            position: absolute;
+            inset: 0;
+
+            opacity: 0.12;
+
+            background-image:
+                linear-gradient(#fff 1px, transparent 1px),
+                linear-gradient(90deg, #fff 1px, transparent 1px);
+
+            background-size: 80px 80px;
+        }
+
+        .map-line {
+            position: absolute;
+
+            height: 1px;
+
+            background: linear-gradient(
+                90deg,
+                var(--red),
+                transparent
+            );
+
+            transform-origin: left center;
+        }
+
+        .line-1 {
+            width: 350px;
+            left: 47%;
+            top: 48%;
+            transform: rotate(-15deg);
+        }
+
+        .line-2 {
+            width: 300px;
+            left: 50%;
+            top: 49%;
+            transform: rotate(18deg);
+        }
+
+        .line-3 {
+            width: 240px;
+            left: 50%;
+            top: 48%;
+            transform: rotate(50deg);
+        }
+
+        .location {
+            position: absolute;
+
+            transform: translate(-50%, -50%);
+
+            text-align: center;
+        }
+
+        .location-dot {
+            width: 14px;
+            height: 14px;
+
+            border-radius: 50%;
+
+            background: var(--red);
+
+            margin: auto;
+
+            box-shadow:
+                0 0 0 8px rgba(227,6,19,0.15),
+                0 0 30px rgba(227,6,19,0.6);
+        }
+
+        .location strong {
+            display: block;
+
+            margin-top: 13px;
+
+            font-size: 12px;
+
+            letter-spacing: 2px;
+        }
+
+        .location small {
+            display: block;
+
+            color: #888;
+
+            margin-top: 4px;
+        }
+
+        .turkey {
+            left: 48%;
+            top: 45%;
+        }
+
+        .iraq {
+            left: 55%;
+            top: 55%;
+        }
+
+        .china {
+            left: 74%;
+            top: 49%;
+        }
+
+        .world {
+            left: 25%;
+            top: 28%;
+        }
+
+        /* =========================
+           WORLD IS CHANGING
+        ========================= */
+
+        .changing {
+            background: var(--black);
+            color: white;
+        }
+
+        .changing-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8vw;
+            align-items: center;
+            margin-top: 60px;
+        }
+
+        .needs-list {
+            list-style: none;
+        }
+
+        .needs-list li {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+
+            padding: 18px 0;
+            border-bottom: 1px solid #262626;
+
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .needs-list li:first-child {
+            padding-top: 0;
+        }
+
+        .needs-check {
+            flex: none;
+
+            width: 26px;
+            height: 26px;
+
+            border-radius: 50%;
+
+            background: var(--red);
+            color: white;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 13px;
+            font-weight: 900;
+        }
+
+        .delivers {
+            border-left: 1px solid #292929;
+            padding-left: 8vw;
+        }
+
+        .delivers .kicker {
+            color: var(--red);
+        }
+
+        .delivers strong {
+            display: block;
+
+            font-size: clamp(38px, 4.5vw, 64px);
+            line-height: 1;
+            letter-spacing: -3px;
+
+            color: var(--red);
+
+            margin-bottom: 6px;
+        }
+
+        .delivers span {
+            display: block;
+
+            font-size: clamp(38px, 4.5vw, 64px);
+            line-height: 1;
+            letter-spacing: -3px;
+
+            color: white;
+        }
+
+        .delivers span b {
+            color: var(--red);
+            font-weight: 900;
+        }
+
+        /* =========================
+           STRENGTHS
+        ========================= */
+
+        .strengths-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+
+            margin-top: 60px;
+        }
+
+        .strength-card {
+            padding: 40px 32px;
+
+            border: 1px solid var(--border);
+        }
+
+        .strength-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 44px;
+            height: 44px;
+
+            border-radius: 50%;
+
+            border: 1.5px solid var(--red);
+            color: var(--red);
+
+            font-size: 15px;
+            font-weight: 800;
+
+            margin-bottom: 26px;
+        }
+
+        .strength-card h3 {
+            font-size: 24px;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+        }
+
+        .strength-card p {
+            color: #666;
+            font-size: 15px;
+        }
+
+        .capability-bar {
+            margin-top: 2px;
+
+            background: var(--black);
+            color: white;
+
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        .capability-item {
+            padding: 26px 18px;
+
+            text-align: center;
+
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1.2px;
+
+            border-right: 1px solid #262626;
+        }
+
+        .capability-item:last-child {
+            border-right: none;
+        }
+
+        /* =========================
+           JOURNEY / GROWTH
+        ========================= */
+
+        .journey {
+            background: var(--black);
+            color: white;
+        }
+
+        .journey-description {
+            color: #999;
+            max-width: 700px;
+            font-size: 18px;
+        }
+
+        .journey-table-wrap {
+            margin-top: 60px;
+            overflow-x: auto;
+        }
+
+        .journey-table {
+            width: 100%;
+            min-width: 720px;
+            border-collapse: collapse;
+        }
+
+        .journey-table th {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: #aaa;
+            padding: 0 0 18px;
+            border-bottom: 1px solid #292929;
+        }
+
+        .journey-table th:first-child {
+            text-align: left;
+        }
+
+        .journey-table th.current {
+            color: white;
+            background: var(--red);
+            padding: 10px 14px;
+            border-radius: 4px 4px 0 0;
+            border-bottom: 1px solid var(--red);
+        }
+
+        .journey-table td {
+            text-align: center;
+            padding: 22px 10px;
+            border-bottom: 1px solid #232323;
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .journey-table td.current {
+            color: var(--red);
+        }
+
+        .journey-table .row-label {
+            text-align: left;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            color: #ccc;
+            text-transform: uppercase;
+        }
+
+        .journey-table .row-label small {
+            display: block;
+            margin-top: 4px;
+            color: #666;
+            font-size: 11px;
+            letter-spacing: 1px;
+            text-transform: none;
+            font-weight: 400;
+        }
+
+        .journey-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .journey-highlights {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1px;
+            background: #292929;
+            margin-top: 60px;
+        }
+
+        .journey-highlight {
+            background: var(--black);
+            padding: 30px 10px;
+            text-align: center;
+        }
+
+        .journey-highlight strong {
+            display: block;
+            color: var(--red);
+            font-size: 34px;
+            letter-spacing: -1px;
+            margin-bottom: 8px;
+        }
+
+        .journey-highlight span {
+            display: block;
+            color: #999;
+            font-size: 11px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .journey-highlight small {
+            display: block;
+            color: #555;
+            font-size: 10px;
+            letter-spacing: 1px;
+            margin-top: 4px;
+        }
+
+        /* =========================
+           PORTFOLIO
+        ========================= */
+
+        .portfolio {
+            background: var(--light);
+        }
+
+        .portfolio-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 2px;
+
+            margin-top: 55px;
+        }
+
+        .product-card {
+            min-height: 290px;
+
+            background: white;
+
+            padding: 35px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: flex-end;
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+        .product-card::before {
+            content: "";
+
+            position: absolute;
+
+            width: 230px;
+            height: 230px;
+
+            right: -80px;
+            top: -80px;
+
+            border-radius: 50%;
+
+            background: #eeeeeb;
+        }
+
+        .product-number {
+            position: relative;
+
+            color: var(--red);
+
+            font-size: 11px;
+            font-weight: 800;
+
+            letter-spacing: 2px;
+        }
+
+        .product-card h3 {
+            position: relative;
+
+            font-size: 28px;
+
+            margin-top: 8px;
+
+            letter-spacing: -1px;
+        }
+
+        /* =========================
+           WHY NEWAL
+        ========================= */
+
+        .why {
+            display: grid;
+
+            grid-template-columns:
+                0.8fr
+                1.2fr;
+
+            gap: 8vw;
+        }
+
+        .why-text p {
+            max-width: 700px;
+
+            font-size: 18px;
+
+            color: #555;
+
+            margin-bottom: 35px;
+        }
+
+        .facts {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 1px;
+
+            background: var(--border);
+        }
+
+        .fact {
+            background: white;
+
+            padding: 28px 22px;
+        }
+
+        .fact strong {
+            display: block;
+
+            font-size: 19px;
+
+            letter-spacing: -0.5px;
+
+            margin-bottom: 6px;
+        }
+
+        .fact strong span {
+            color: var(--red);
+        }
+
+        .fact em {
+            display: block;
+
+            font-style: normal;
+
+            color: var(--red);
+
+            font-size: 11px;
+
+            font-weight: 800;
+
+            letter-spacing: 1px;
+
+            margin-bottom: 14px;
+        }
+
+        .fact span.label {
+            color: #777;
+
+            font-size: 11px;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+        }
+
+        .why-tagline {
+            margin-top: 30px;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            letter-spacing: 1px;
+
+            color: #555;
+        }
+
+        .why-tagline b {
+            color: var(--red);
+        }
+
+        /* =========================
+           PARTNER
+        ========================= */
+
+        .partner {
+            background: var(--red);
+
+            color: white;
+        }
+
+        .partner .kicker {
+            color: white;
+        }
+
+        .partner h2 {
+            max-width: 950px;
+        }
+
+        .partner p {
+            max-width: 700px;
+
+            font-size: 20px;
+
+            color: rgba(255,255,255,0.85);
+
+            margin-bottom: 30px;
+        }
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact {
+            display: grid;
+
+            grid-template-columns:
+                0.75fr
+                1.25fr;
+
+            gap: 8vw;
+        }
+
+        .contact-info p {
+            max-width: 550px;
+        }
+
+        .form {
+            display: grid;
+
+            grid-template-columns:
+                1fr
+                1fr;
+
+            gap: 20px;
+        }
+
+        .form input,
+        .form select,
+        .form textarea {
+            width: 100%;
+
+            border: none;
+
+            border-bottom: 1px solid #bbb;
+
+            padding: 16px 2px;
+
+            background: transparent;
+
+            font-family: inherit;
+
+            font-size: 15px;
+
+            outline: none;
+        }
+
+        .form textarea {
+            min-height: 120px;
+
+            resize: vertical;
+        }
+
+        .full {
+            grid-column: 1 / -1;
+        }
+
+        .form button {
+            border: none;
+
+            background: var(--red);
+
+            color: white;
+
+            padding: 17px 25px;
+
+            cursor: pointer;
+
+            font-size: 11px;
+
+            font-weight: 800;
+
+            letter-spacing: 1.5px;
+        }
+
+        /* =========================
+           OFFICES
+        ========================= */
+
+        .offices {
+            background: var(--black);
+
+            color: white;
+        }
+
+        .office-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 1px;
+
+            background: #333;
+
+            margin-top: 55px;
+        }
+
+        .office {
+            min-height: 270px;
+
+            padding: 40px;
+
+            background: var(--black);
+        }
+
+        .office-country {
+            color: var(--red);
+
+            font-size: 12px;
+
+            font-weight: 800;
+
+            letter-spacing: 2px;
+        }
+
+        .office h3 {
+            font-size: 30px;
+
+            margin: 15px 0 20px;
+        }
+
+        .office p {
+            color: #888;
+
+            line-height: 1.9;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            padding: 30px 7vw;
+
+            background: var(--black);
+
+            border-top: 1px solid #292929;
+
+            color: #777;
+
+            font-size: 11px;
+        }
+
+        footer .logo {
+            color: white;
+            font-size: 24px;
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 850px) {
+
+            header {
+                height: 68px;
+            }
+
+            nav a:not(.nav-button) {
+                display: none;
+            }
+
+            section {
+                padding: 85px 6vw;
+            }
+
+            .hero-content {
+                padding:
+                    0
+                    6vw
+                    8vh;
+            }
+
+            .hero-video-panel {
+                width: 60vw;
+                opacity: 0.35;
+            }
+
+            .hero-video-panel::after {
+                background: linear-gradient(
+                    90deg,
+                    rgba(17,17,17,0.95),
+                    rgba(17,17,17,0.5) 100%
+                );
+            }
+
+            .hero h1 {
+                font-size: 58px;
+                letter-spacing: -3px;
+            }
+
+            .intro,
+            .why,
+            .contact {
+                grid-template-columns: 1fr;
+
+                gap: 50px;
+            }
+
+            .portfolio-grid,
+            .office-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .facts {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .journey-highlights {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .changing-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .delivers {
+                border-left: none;
+                padding-left: 0;
+                border-top: 1px solid #292929;
+                padding-top: 40px;
+            }
+
+            .strengths-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .capability-bar {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .capability-item {
+                border-bottom: 1px solid #262626;
+            }
+
+            .network-map {
+                height: 500px;
+            }
+
+            .map-line {
+                display: none;
+            }
+
+            .turkey {
+                left: 42%;
+                top: 45%;
+            }
+
+            .iraq {
+                left: 52%;
+                top: 58%;
+            }
+
+            .china {
+                left: 73%;
+                top: 51%;
+            }
+
+            .world {
+                left: 23%;
+                top: 28%;
+            }
+
+            .form {
+                grid-template-columns: 1fr;
+            }
+
+            .full {
+                grid-column: auto;
+            }
+
+            footer {
+                flex-direction: column;
+
+                align-items: flex-start;
+
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+    <a href="#" class="logo">
+    <img src="assets/newal-logo.png" alt="Newal">
+    </a>
+
+    <nav>
+
+        <a href="#story">
+            ABOUT
+        </a>
+
+        <a href="#portfolio">
+            PRODUCTS
+        </a>
+
+        <a href="#journey">
+            GROWTH
+        </a>
+
+        <a href="#contact">
+            CONTACT
+        </a>
+
+        <a href="#contact" class="nav-button">
+            LET'S TALK →
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+    <div class="hero-video-panel">
+
+        <video
+            autoplay
+            muted
+            loop
+            playsinline
+        >
+
+            <source
+                src="assets/newal-hero.mp4"
+                type="video/mp4"
+            >
+
+        </video>
+
+    </div>
+
+    <div class="hero-content">
+
+        <div class="eyebrow">
+            TURKISH ROOTS · GLOBAL REACH
+        </div>
+
+        <h1>
+            A STRONG BRAND.
+            <br>
+            <span>A GLOBAL REACH.</span>
+        </h1>
+
+        <p class="hero-description">
+            Newal is a Turkish home appliance brand combining
+            strong market expertise, a powerful global supply
+            network and an ambition to connect with markets
+            around the world.
+        </p>
+
+        <a
+            href="#contact"
+            class="button button-red"
+        >
+            BECOME A PARTNER →
+        </a>
+
+        <a
+            href="#story"
+            class="button button-white"
+        >
+            DISCOVER NEWAL ↓
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     INTRO
+========================= -->
+
+<section
+    class="intro"
+    id="story"
+>
+
+    <div>
+
+        <div class="kicker">
+            WHO WE ARE
+        </div>
+
+        <h2>
+            MORE THAN
+            <br>
+            AN APPLIANCE BRAND.
+        </h2>
+
+    </div>
+
+    <div>
+
+        <p class="lead">
+
+            Newal is a Turkish home appliance brand
+            built to go beyond borders.
+
+            With a strong presence in Iraq,
+            a global supply network in China
+            and business operations in Turkey,
+            we connect products, markets and
+            opportunities across the world.
+
+        </p>
+
+        <p class="why-tagline" style="margin-top:26px;">
+            We are building one of the region's <b>fastest-growing</b> home appliance brands.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     WORLD IS CHANGING
+========================= -->
+
+<section class="changing">
+
+    <div class="kicker">
+        THE WORLD IS CHANGING
+    </div>
+
+    <h2>
+        THE WORLD NEEDS
+        <br>
+        MORE THAN PRODUCTS.
+    </h2>
+
+    <div class="changing-grid">
+
+        <ul class="needs-list">
+
+            <li>
+                <span class="needs-check">✓</span>
+                Faster product development
+            </li>
+
+            <li>
+                <span class="needs-check">✓</span>
+                Reliable partners
+            </li>
+
+            <li>
+                <span class="needs-check">✓</span>
+                Flexible manufacturing
+            </li>
+
+            <li>
+                <span class="needs-check">✓</span>
+                Certified products
+            </li>
+
+            <li>
+                <span class="needs-check">✓</span>
+                Strong brands
+            </li>
+
+        </ul>
+
+        <div class="delivers">
+            <div class="kicker">
+                NEWAL DELIVERS
+            </div>
+            <strong>NEWAL</strong>
+            <span>delivers<br>all of them<b>.</b></span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     GLOBAL STRENGTHS
+========================= -->
+
+<section class="strengths">
+
+    <div class="kicker">
+        GLOBAL TURKISH BRAND
+    </div>
+
+    <h2>
+        BUILT ON THREE
+        <br>
+        CORE STRENGTHS.
+    </h2>
+
+    <div class="strengths-grid">
+
+        <div class="strength-card">
+            <div class="strength-number">01</div>
+            <h3>Turkish Quality</h3>
+            <p>Designed with care. Built to last.</p>
+        </div>
+
+        <div class="strength-card">
+            <div class="strength-number">02</div>
+            <h3>Global Scale</h3>
+            <p>Worldwide sourcing. Competitive solutions.</p>
+        </div>
+
+        <div class="strength-card">
+            <div class="strength-number">03</div>
+            <h3>Continuous Innovation</h3>
+            <p>New ideas. New products. Every year.</p>
+        </div>
+
+    </div>
+
+    <div class="capability-bar">
+
+        <div class="capability-item">
+            TURKISH<br>QUALITY
+        </div>
+
+        <div class="capability-item">
+            GLOBAL<br>SCALE
+        </div>
+
+        <div class="capability-item">
+            CHINA<br>OPERATIONS
+        </div>
+
+        <div class="capability-item">
+            OEM / ODM<br>SOLUTIONS
+        </div>
+
+        <div class="capability-item">
+            INNOVATION<br>EVERY DAY
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     GLOBAL NETWORK
+========================= -->
+
+<section class="network">
+
+    <div class="kicker">
+        OUR GLOBAL NETWORK
+    </div>
+
+    <h2>
+        CONNECTED BY BUSINESS.
+        <br>
+        DRIVEN BY OPPORTUNITY.
+    </h2>
+
+    <p class="network-description">
+
+        From our Turkish roots to our global
+        supply network in China, Newal is
+        built to serve markets beyond borders.
+
+    </p>
+
+
+    <div class="network-map">
+
+        <div class="map-grid"></div>
+
+        <div class="map-line line-1"></div>
+        <div class="map-line line-2"></div>
+        <div class="map-line line-3"></div>
+
+
+        <div class="location turkey">
+
+            <div class="location-dot"></div>
+
+            <strong>
+                TURKEY
+            </strong>
+
+            <small>
+                Brand & Business
+            </small>
+
+        </div>
+
+
+        <div class="location iraq">
+
+            <div class="location-dot"></div>
+
+            <strong>
+                IRAQ
+            </strong>
+
+            <small>
+                Strong Market
+            </small>
+
+        </div>
+
+
+        <div class="location china">
+
+            <div class="location-dot"></div>
+
+            <strong>
+                CHINA
+            </strong>
+
+            <small>
+                Supply Network
+            </small>
+
+        </div>
+
+
+        <div class="location world">
+
+            <div class="location-dot"></div>
+
+            <strong>
+                WORLD
+            </strong>
+
+            <small>
+                Global Reach
+            </small>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PRODUCT PORTFOLIO
+========================= -->
+
+<section
+    class="portfolio"
+    id="portfolio"
+>
+
+    <div class="kicker">
+        OUR PORTFOLIO
+    </div>
+
+    <h2>
+        ONE BRAND.
+        <br>
+        MANY CATEGORIES.
+    </h2>
+
+
+    <div class="portfolio-grid">
+
+
+        <div class="product-card">
+
+            <span class="product-number">
+                01
+            </span>
+
+            <h3>
+                Kitchen
+            </h3>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <span class="product-number">
+                02
+            </span>
+
+            <h3>
+                Food Preparation
+            </h3>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <span class="product-number">
+                03
+            </span>
+
+            <h3>
+                Hot Beverage
+            </h3>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <span class="product-number">
+                04
+            </span>
+
+            <h3>
+                Personal Care
+            </h3>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <span class="product-number">
+                05
+            </span>
+
+            <h3>
+                Floor Care
+            </h3>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <span class="product-number">
+                06
+            </span>
+
+            <h3>
+                Garment Care
+            </h3>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     JOURNEY / GROWTH
+========================= -->
+
+<section class="journey" id="journey">
+
+    <div class="kicker">
+        OUR JOURNEY
+    </div>
+
+    <h2>
+        STRONG GROWTH.
+        <br>
+        CLEAR PROGRESS.
+    </h2>
+
+    <p class="journey-description">
+
+        Five years of consistent expansion across
+        volume, product range and market reach —
+        the numbers behind Newal's growth story.
+
+    </p>
+
+
+    <div class="journey-table-wrap">
+
+        <table class="journey-table">
+
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>2021</th>
+                    <th>2022</th>
+                    <th>2023</th>
+                    <th>2024</th>
+                    <th class="current">2025</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td class="row-label">
+                        Qty
+                        <small>M pcs</small>
+                    </td>
+                    <td>2.3</td>
+                    <td>2.9</td>
+                    <td>3.4</td>
+                    <td>3.5</td>
+                    <td class="current">3.8</td>
+                </tr>
+
+                <tr>
+                    <td class="row-label">
+                        Model
+                    </td>
+                    <td>1320</td>
+                    <td>1432</td>
+                    <td>1518</td>
+                    <td>1672</td>
+                    <td class="current">1782</td>
+                </tr>
+
+                <tr>
+                    <td class="row-label">
+                        New Models
+                    </td>
+                    <td>121</td>
+                    <td>135</td>
+                    <td>152</td>
+                    <td>165</td>
+                    <td class="current">174</td>
+                </tr>
+
+                <tr>
+                    <td class="row-label">
+                        Countries
+                    </td>
+                    <td>13</td>
+                    <td>16</td>
+                    <td>21</td>
+                    <td>24</td>
+                    <td class="current">32</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="journey-highlights">
+
+        <div class="journey-highlight">
+            <strong>1.6x</strong>
+            <span>Qty Growth</span>
+            <small>2021 – 2025</small>
+        </div>
+
+        <div class="journey-highlight">
+            <strong>35%</strong>
+            <span>More Models</span>
+            <small>2021 – 2025</small>
+        </div>
+
+        <div class="journey-highlight">
+            <strong>44%</strong>
+            <span>More New Models</span>
+            <small>2021 – 2025</small>
+        </div>
+
+        <div class="journey-highlight">
+            <strong>2.5x</strong>
+            <span>Market Expansion</span>
+            <small>2021 – 2025</small>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     WHY NEWAL
+========================= -->
+
+<section class="why">
+
+    <div>
+
+        <div class="kicker">
+            WHY NEWAL
+        </div>
+
+        <h2>
+            BUILT TO GROW
+            WITH GLOBAL
+            MARKETS.
+        </h2>
+
+    </div>
+
+
+    <div class="why-text">
+
+        <p>
+
+            Our international approach brings together
+            Turkish brand expertise, a broad product
+            portfolio and a strong sourcing ecosystem
+            in China.
+
+            This structure allows Newal to respond
+            to different market needs while building
+            long-term business relationships.
+
+        </p>
+
+
+        <div class="facts">
+
+            <div class="fact">
+                <em>Turkish Brand</em>
+                <strong>Trust</strong>
+                <span class="label">Designed &amp; built with care</span>
+            </div>
+
+            <div class="fact">
+                <em>China Operations</em>
+                <strong>Scale</strong>
+                <span class="label">Worldwide sourcing network</span>
+            </div>
+
+            <div class="fact">
+                <em>OEM / ODM</em>
+                <strong>Flexibility</strong>
+                <span class="label">Solutions built around you</span>
+            </div>
+
+            <div class="fact">
+                <em>Innovation</em>
+                <strong>New Products</strong>
+                <span class="label">New ideas, every year</span>
+            </div>
+
+            <div class="fact">
+                <em>Compliance</em>
+                <strong>Market Ready</strong>
+                <span class="label">Certified for every market</span>
+            </div>
+
+            <div class="fact">
+                <em>Partnership</em>
+                <strong>Long-term Success</strong>
+                <span class="label">Built for lasting growth</span>
+            </div>
+
+        </div>
+
+        <div class="why-tagline">
+            <b>Strong roots.</b> Global reach. Sustainable growth.
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PARTNER CTA
+========================= -->
+
+<section class="partner">
+
+    <div class="kicker">
+        GLOBAL PARTNERS
+    </div>
+
+    <h2>
+        LET'S BUILD
+        THE NEXT MARKET
+        TOGETHER.
+    </h2>
+
+    <p>
+
+        We work with distributors, wholesalers,
+        retailers and business partners looking
+        to bring Newal to new markets.
+
+    </p>
+
+    <a
+        href="#contact"
+        class="button button-white"
+    >
+        START A CONVERSATION →
+    </a>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section
+    class="contact"
+    id="contact"
+>
+
+    <div class="contact-info">
+
+        <div class="kicker">
+            CONTACT NEWAL
+        </div>
+
+        <h2>
+            LET'S TALK.
+        </h2>
+
+        <p class="lead">
+
+            Tell us about your market,
+            your business and how you
+            would like to work with Newal.
+
+        </p>
+
+    </div>
+
+
+    <form class="form">
+
+        <input
+            type="text"
+            placeholder="Full Name *"
+            required
+        >
+
+        <input
+            type="text"
+            placeholder="Company Name *"
+            required
+        >
+
+
+        <input
+            type="text"
+            placeholder="Country *"
+            required
+        >
+
+
+        <select required>
+
+            <option value="">
+                Business Type *
+            </option>
+
+            <option>
+                Distributor
+            </option>
+
+            <option>
+                Wholesaler
+            </option>
+
+            <option>
+                Retailer
+            </option>
+
+            <option>
+                E-commerce
+            </option>
+
+            <option>
+                Other
+            </option>
+
+        </select>
+
+
+        <input
+            class="full"
+            type="email"
+            placeholder="Business Email *"
+            required
+        >
+
+
+        <input
+            class="full"
+            type="text"
+            placeholder="Phone / WhatsApp"
+        >
+
+
+        <textarea
+            class="full"
+            placeholder="Tell us about your business and market..."
+        ></textarea>
+
+
+        <button
+            class="full"
+            type="submit"
+        >
+            SEND INQUIRY →
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- =========================
+     OFFICES
+========================= -->
+
+<section class="offices">
+
+    <div class="kicker">
+        OUR OFFICES
+    </div>
+
+    <h2>
+        LOCAL PRESENCE.
+        <br>
+        GLOBAL CONNECTION.
+    </h2>
+
+
+    <div class="office-grid">
+
+
+        <div class="office">
+
+            <div class="office-country">
+                TURKEY
+            </div>
+
+            <h3>
+                Newal Türkiye
+            </h3>
+
+            <p>
+
+                Headquarters / Business Operations
+                <br><br>
+
+                Address will be added
+                <br>
+
+                Phone · Email
+
+            </p>
+
+        </div>
+
+
+        <div class="office">
+
+            <div class="office-country">
+                CHINA
+            </div>
+
+            <h3>
+                Newal China
+            </h3>
+
+            <p>
+
+                Global Supply & Business Office
+                <br><br>
+
+                Address will be added
+                <br>
+
+                Phone · Email
+
+            </p>
+
+        </div>
+
+
+        <div class="office">
+
+            <div class="office-country">
+                IRAQ
+            </div>
+
+            <h3>
+                Newal Iraq
+            </h3>
+
+            <p>
+
+                Market Operations
+                <br><br>
+
+                Address will be added
+                <br>
+
+                Phone · Email
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="logo">
+        NEW<span>AL</span>
+    </div>
+
+    <div>
+        © 2026 Newal. All rights reserved.
+    </div>
+
+    <div>
+        Turkish Roots. Global Reach.
+    </div>
+
+</footer>
+
+
+</body>
+</html>
